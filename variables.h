@@ -12,5 +12,22 @@ void newInt() {
     int intData = stoi(intDataString);
     integers[varName] = intData;
 }
-
-#endif //VARIABLES_H
+void newDouble() {
+    varName = 0;
+    string doubleNameString = currentLineData.substr(currentLineData.find_first_not_of("double ") - 1);
+    varName = stoi(doubleNameString);
+    getline(mainTppFile, currentLineData);
+    string doubleDataString = currentLineData.substr(currentLineData.find_first_not_of("= "));
+    double doubleData = stoi(doubleDataString);
+    doubles[varName] = doubleData;
+}
+void newString() {
+    varName = 0;
+    string stringNameString = currentLineData.substr(currentLineData.find_first_not_of("string ") - 1);
+    varName = stoi(stringNameString);
+    getline(mainTppFile, currentLineData);
+    string stringData = currentLineData.substr(currentLineData.find_first_not_of("= '"));
+    stringData.erase(stringData.find_last_of("'"));
+    strings[varName] = stringData;
+}
+#endif
