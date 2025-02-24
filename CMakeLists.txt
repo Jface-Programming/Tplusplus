@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD 23)
 add_executable(tpp main.cpp
         variables.h
         math.h
+        console.h
 )

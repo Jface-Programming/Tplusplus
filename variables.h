@@ -18,7 +18,7 @@ void newDouble() {
     varName = stoi(doubleNameString);
     getline(mainTppFile, currentLineData);
     string doubleDataString = currentLineData.substr(currentLineData.find_first_not_of("= "));
-    double doubleData = stoi(doubleDataString);
+    double doubleData = stod(doubleDataString);
     doubles[varName] = doubleData;
 }
 void newString() {
