@@ -96,4 +96,4 @@ void math() {
         }
     }
 }
-#endif //MATH_H
+#endif

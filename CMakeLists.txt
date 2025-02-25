@@ -7,4 +7,5 @@ add_executable(tpp main.cpp
         variables.h
         math.h
         console.h
+        ifStatement.h
 )

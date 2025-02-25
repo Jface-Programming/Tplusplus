@@ -8,6 +8,24 @@ void console() {
         getline(mainTppFile, currentLineData);
         cout << currentLineData << endl;
     }
+    if (currentLineData.contains("getLN")) {
+        getline(mainTppFile, currentLineData);
+        varToPrint = stoi(currentLineData);
+        cin >> strings[varToPrint];
+        cout << endl;
+    }
+    if (currentLineData.contains("getInt")) {
+        getline(mainTppFile, currentLineData);
+        varToPrint = stoi(currentLineData);
+        cin >> integers[varToPrint];
+        cout << endl;
+    }
+    if (currentLineData.contains("getDouble")) {
+        getline(mainTppFile, currentLineData);
+        varToPrint = stoi(currentLineData);
+        cin >> doubles[varToPrint];
+        cout << endl;
+    }
     if (currentLineData.contains("printInt")) {
         getline(mainTppFile, currentLineData);
         varToPrint = stoi(currentLineData);
@@ -23,5 +41,10 @@ void console() {
         varToPrint = stoi(currentLineData);
         cout << strings[varToPrint] << endl;
     }
+    if (currentLineData.contains("printBool")) {
+        getline(mainTppFile, currentLineData);
+        varToPrint = stoi(currentLineData);
+        cout << boolalpha << booleans[varToPrint] << endl;
+    }
 }
-#endif //CONSOLE_H
+#endif
