@@ -19,6 +19,9 @@ void math() {
     getline(mainTppFile, mathOperator);
     if (mathOperator.contains("+")) {
         getline(mainTppFile, var1string);
+        if (var1string.contains(")")) {
+            getline(mainTppFile, var1string);
+        }
         getline(mainTppFile, var2string);
         getline(mainTppFile, var3string);
         var1 = stoi(var1string);
@@ -45,6 +48,9 @@ void math() {
     }
     if (mathOperator.contains("*")) {
         getline(mainTppFile, var1string);
+        if (var1string.contains(")")) {
+            getline(mainTppFile, var1string);
+        }
         getline(mainTppFile, var2string);
         getline(mainTppFile, var3string);
         var1 = stoi(var1string);
@@ -71,6 +77,9 @@ void math() {
     }
     if (mathOperator.contains("-")) {
         getline(mainTppFile, var1string);
+        if (var1string.contains(")")) {
+            getline(mainTppFile, var1string);
+        }
         getline(mainTppFile, var2string);
         getline(mainTppFile, var3string);
         var1 = stoi(var1string);
