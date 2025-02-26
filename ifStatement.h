@@ -1,12 +1,9 @@
-#ifndef WHILE_IF_H
-#define WHILE_IF_H
+#ifndef IFSTATEMENT_H
+#define IFSTATEMENT_H
 int IfStatementVarName = 0;
 bool checkForLoopEndIf = true;
 
 void ifStatementData() {
-#include "variables.h"
-#include "math.h"
-#include "console.h"
     getline(mainTppFile, currentLineData);
     if (currentLineData.contains("int")) {
         newInt();

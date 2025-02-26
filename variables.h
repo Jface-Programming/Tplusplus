@@ -1,7 +1,5 @@
 #ifndef VARIABLES_H
 #define VARIABLES_H
-#include <iostream>
-#include <string>
 int varName;
 bool boolValue = false;
 void newInt() {
